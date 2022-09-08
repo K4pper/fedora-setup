@@ -35,6 +35,7 @@ gnome-extensions-app \
 remmina \
 util-linux-user \
 sqlite \
+starship
 ```
 
 ## Oh-My-ZSH
@@ -145,7 +146,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="eastwood"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -175,16 +176,16 @@ ZSH_THEME="robbyrussell"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -244,4 +245,59 @@ eval "$(starship init zsh)"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
 alias fjson="jq -R -r -C '. as \$line | try fromjson catch \$line'"
+```
+
+## Starship config
+
+I use the following config file, file should be located at ~/.config/starship.toml
+
+```
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$package\
+$golang\
+$helm\
+$kotlin\
+$nim\
+$nodejs\
+$rust\
+$terraform\
+$vagrant\
+$nix_shell\
+$memory_usage\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$character"""
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[➜](bold red)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+
+[kubernetes]
+format = '[$symbol\[$namespace\] $context](blue) '
+disabled = false
 ```
