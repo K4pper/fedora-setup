@@ -301,3 +301,28 @@ truncation_symbol = "…/"
 format = '[$symbol\[$namespace\] $context](blue) '
 disabled = false
 ```
+
+## Gnome beautification
+
+Default gnome leaves a lot to be desired for me at least, this section basically makes gnome look like MacOS
+
+### Fonts
+
+```
+sudo dnf install google-roboto-fonts
+```
+
+### Icons
+
+https://github.com/vinceliuice/WhiteSur-icon-theme
+
+### Theme
+
+https://github.com/vinceliuice/WhiteSur-gtk-theme
+
+## Uninstallation
+
+```
+sudo dnf remove \
+gnome-terminal
+```
