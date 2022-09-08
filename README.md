@@ -327,6 +327,8 @@ I use wintile reloaded to split my screen into 3 columns, wintile reloaded isn't
 
 https://github.com/Captn138/wintile-reloaded
 
+To complete the Mac look, i use dash to dock
+
 https://extensions.gnome.org/extension/307/dash-to-dock/
 
 ## Uninstallation
