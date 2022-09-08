@@ -19,7 +19,7 @@ defaultyes=True
 keepcache=True
 ```
 
-## DNF installation
+## Utilities
 
 ```
 sudo dnf install \
