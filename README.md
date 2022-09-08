@@ -94,6 +94,18 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 ```
 
+## VPN
+
+```
+sudo dnf copr enable yuezk/globalprotect-openconnect
+sudo dnf install globalprotect-openconnect
+```
+
+## Teams
+```
+https://www.microsoft.com/en-ww/microsoft-teams/download-app
+```
+
 ## Alacritty Config
 
 Alacritty uses a yaml file to configure its settings, the file should be stored at ~/.config/alacritty/alacritty.yaml
