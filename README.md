@@ -324,6 +324,7 @@ https://github.com/varlesh/volantes-cursors
 ## Gnome Extensions
 
 I use wintile reloaded to split my screen into 3 columns, wintile reloaded isn't available on extensions.gnome and therefore needs to be installed manually
+
 https://github.com/Captn138/wintile-reloaded
 
 ## Uninstallation
