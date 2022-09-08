@@ -37,7 +37,8 @@ util-linux-user \
 sqlite \
 starship \
 syncthing \
-keepassxc
+keepassxc \
+dconf-editor
 ```
 
 ## Oh-My-ZSH
