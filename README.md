@@ -320,6 +320,10 @@ https://github.com/vinceliuice/WhiteSur-icon-theme
 
 https://github.com/vinceliuice/WhiteSur-gtk-theme
 
+### Cursor
+
+https://github.com/varlesh/volantes-cursors
+
 ## Uninstallation
 
 ```
