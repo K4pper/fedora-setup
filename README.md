@@ -102,9 +102,7 @@ sudo dnf install globalprotect-openconnect
 ```
 
 ## Teams
-```
 https://www.microsoft.com/en-ww/microsoft-teams/download-app
-```
 
 ## Alacritty Config
 
