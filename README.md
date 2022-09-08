@@ -35,7 +35,9 @@ gnome-extensions-app \
 remmina \
 util-linux-user \
 sqlite \
-starship
+starship \
+syncthing \
+keepassxc
 ```
 
 ## Oh-My-ZSH
